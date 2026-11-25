@@ -144,7 +144,7 @@ All data comes from DummyJSON, no API key needed:
 - Possible next steps: user authentication, a real checkout flow, product filters and sorting, and dark mode.
 ## Author
  
-**Your Name**
+**Ahmed Ramadan**
  
 - GitHub: [@Cooooooooooder](https://github.com/Cooooooooooder)
 ## License
