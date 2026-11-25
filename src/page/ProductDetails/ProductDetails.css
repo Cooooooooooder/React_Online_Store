@@ -1,0 +1,168 @@
+.item_details {
+  padding: 40px 0 80px 0;
+}
+
+.item_details .imgs_item {
+  width: 450px;
+  max-width: 100%;
+}
+
+.item_details .big_img {
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border_color);
+  border-radius: 5px;
+  background: var(--white_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_details .big_img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item_details .sm_img {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.item_details .sm_img img {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  object-fit: contain;
+  border: 1px solid var(--border_color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item_details .sm_img img:hover,
+.item_details .sm_img img.active {
+  border-color: var(--main_color);
+}
+
+.item_details .container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.item_details .details_item {
+  flex: 1;
+  min-width: 300px;
+}
+
+.item_details .details_item .name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.item_details .details_item .stars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.item_details .details_item .stars svg {
+  fill: #f8d941;
+  font-size: 20px;
+}
+
+.item_details .details_item .price {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--main_color);
+  margin-bottom: 20px;
+}
+
+.item_details .details_item h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.item_details .details_item h5 span {
+  font-weight: 700;
+}
+
+.item_details .details_item .desc {
+  line-height: 1.7;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border_color);
+}
+
+.item_details .details_item .stock span {
+  color: #dc2626;
+}
+
+.item_details .details_item .rating_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.item_details .details_item .rating_row .stars {
+  margin-bottom: 0;
+}
+
+.item_details .details_item .rating_row span {
+  font-weight: 600;
+  color: var(--p_color);
+}
+
+
+/* زرار Add to cart */
+.item_details .details_item .btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+}
+
+.item_details .details_item .btn svg {
+  font-size: 20px;
+}
+
+/* أيقونات المفضلة والمشاركة */
+.item_details .details_item .icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.item_details .details_item .icons span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item_details .details_item .icons span:hover {
+  background: var(--main_color);
+}
+
+.item_details .details_item .icons span:hover svg {
+  fill: var(--white_color);
+}
+
+.item_details .details_item .icons span.in-fav {
+  background: var(--main_color);
+}
+
+.item_details .details_item .icons span.in-fav svg {
+  fill: var(--white_color);
+}

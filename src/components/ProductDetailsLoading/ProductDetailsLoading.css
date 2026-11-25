@@ -1,0 +1,112 @@
+.pd_loading {
+  padding: 40px 0;
+}
+
+.pd_loading .container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* العنصر الرمادي المتحرك (skeleton) */
+.pd_loading .sk {
+  position: relative;
+  overflow: hidden;
+  background: #e1e3e3;
+  border-radius: 4px;
+}
+
+.pd_loading .sk::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.65),
+    transparent
+  );
+  animation: pd_shimmer 1.4s infinite;
+}
+
+@keyframes pd_shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* قسم الصور */
+.pd_loading_imgs {
+  width: 450px;
+  max-width: 100%;
+}
+
+.pd_loading_big_img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 15px;
+}
+
+.pd_loading_thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.pd_loading_thumb {
+  width: 80px;
+  height: 80px;
+}
+
+/* قسم التفاصيل */
+.pd_loading_details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.pd_loading_line {
+  height: 18px;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.pd_loading_line.title {
+  height: 34px;
+  width: 70%;
+}
+
+.pd_loading_line.stars {
+  width: 140px;
+}
+
+.pd_loading_line.price {
+  height: 28px;
+  width: 110px;
+}
+
+.pd_loading_line.short {
+  width: 40%;
+}
+
+.pd_loading_line.medium {
+  width: 65%;
+}
+
+.pd_loading_btn {
+  width: 170px;
+  height: 46px;
+  margin-top: 30px;
+}
+
+.pd_loading_icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.pd_loading_icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}

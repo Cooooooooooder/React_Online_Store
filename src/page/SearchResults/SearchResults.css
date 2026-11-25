@@ -1,0 +1,24 @@
+.search_page {
+  padding: 40px 0 80px;
+}
+
+.search_page .search_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* الكارت ياخد عرض الخانة في الشبكة */
+.search_page .product {
+  width: 100%;
+}
+
+.search_page .search_empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 0;
+  text-align: center;
+  color: var(--p_color);
+}
